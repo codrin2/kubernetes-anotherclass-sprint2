@@ -30,10 +30,10 @@ spec:
         version: 1.0.0
     spec:
       nodeSelector:
-        kubernetes.io/hostname: k8s-master
+        kubernetes.io/hostname: 56-mhs-k8s-master
       containers:
         - name: api-tester-2211
-          image: 1pro/api-tester:v1.0.0
+          image: codrin2/api-tester:v1.0.0
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
