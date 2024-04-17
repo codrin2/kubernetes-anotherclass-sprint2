@@ -15,7 +15,8 @@ spec:
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
-  
+  local:
+    path: "/root/k8s-local-volume/2121"
   nodeAffinity:
     required:
       nodeSelectorTerms:
